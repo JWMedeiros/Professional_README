@@ -27,7 +27,7 @@
 
   
   # Installation
-  Clone the repo and run node .\index.js in the pwd
+  Clone the repo and run npm install in the pwd. To start use node .\index.js in the pwd.
 
   
   # Usage
