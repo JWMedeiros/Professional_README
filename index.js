@@ -36,9 +36,10 @@ const promptUser = () => {
       message: 'Let us know how to test the project:',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
-        message: 'What license would you like for the project? (Please enter one of apache, boost, bsd3, bsd2, cc0, eclipse or gnugpl3)',
+        message: 'What license would you like for the project? (Please choose one: of apache, boost, bsd3, bsd2, cc0, eclipse or gnugpl3)',
+        choices: ['apache','boost','bsd2','bsd3','cc0','eclipse','gnugpl3','none'],
     },
     {
         type: 'input',

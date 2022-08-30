@@ -1,4 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   license=license.toLowerCase();
@@ -29,7 +28,6 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   license=license.toLowerCase();
@@ -60,7 +58,6 @@ function renderLicenseLink(license) {
   return link;
 }
 
-// TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   license=license.toLowerCase();
@@ -98,16 +95,13 @@ function renderLicenseSection(license) {
   return text;
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.projTitle} 
   ${renderLicenseBadge(data.license)} \n
   ${renderLicenseLink(data.license)}\n
-  ##########################################################
   
   # Description
   ${data.desc} \n
-  ##########################################################
 
   # Table of Contents
   [Description](#description) \n
@@ -118,35 +112,28 @@ function generateMarkdown(data) {
   [How to Contribute](#contributing)\n
   [Testing](#tests)\n
   [Questions about the project](#questions)\n
-  ##########################################################
   
   # Installation
   ${data.installation}\n
-  ##########################################################
   
   # Usage
   ${data.usage}\n
-  ##########################################################
   
   # License
   ${renderLicenseSection(data.license)}\n
-  ##########################################################
   
   # Contributing
   ${data.contribution}\n
-  ##########################################################
   
   # Tests
   ${data.test}\n
-  ##########################################################
   
   # Questions
   ${data.url}
   Please checkout my Github at:
   https://github.com/${data.url}\n
 
-  For any questions about the project please send me an email at ${data.email}\n 
-  ##########################################################`
+  For any questions about the project please send me an email at ${data.email}`
 }
 
 module.exports = generateMarkdown;
